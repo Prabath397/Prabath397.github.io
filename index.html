@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prabath's Portfolio</title>
+  <button id="dark-mode-toggle">🌙 Dark Mode</button>
+  <link rel="stylesheet" href="style.css">
+<!-- AOS Library CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="profile.jpg" alt="Prabath's Profile Picture" id="profile-pic">
+    <h1>👨‍💻 Prabath Udayanga Jayasuriya</h1>
+    <p id="typing-text"></p>
+    <p>Software Engineering Student | Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Enthusiastic Software Engineering student at ICBT Campus, passionate about coding, problem-solving, and technology. Experienced in Python, C++, Java, SQL, HTML, and CSS. Skilled in teamwork, adaptability, and analytical thinking.</p>
+    <a href="MyNewCV.pdf.pdf" download class="cv-btn">📄 Download CV</a>
+  </section>
+
+<!-- Projects Section -->
+<section id="projects" data-aos="fade-right">
+  <h2>My Projects</h2>
+  <p id="loading-message">⏳ Loading projects...</p>
+  <div class="projects-container" id="projects-container">
+    <!-- GitHub repos will be loaded here automatically -->
+  </div>
+</section>
+
+  <!-- Skills Section -->
+  <section id="skills" data-aos="fade-left">
+    <h2>Skills</h2>
+    <p><strong>Programming:</strong> Python, C++, Java, SQL</p>
+    <p><strong>Web:</strong> HTML, CSS, JavaScript</p>
+    <p><strong>Other:</strong> OOP, Git/GitHub, Networking, Database Management</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-aos="zoom-in">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:prabathjayasuriya2003@gmail.com">prabathjayasuriya2003@gmail.com</a></p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/prabath-jayasuriya">linkedin.com/in/prabath-jayasuriya</a></p>
+    <p>GitHub: <a href="https://github.com/Prabath397">github.com/Prabath397</a></p>
+  <form action="mailto:prabathjayasuriya2003@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Prabath Udayanga Jayasuriya</p>
+  <div class="social-icons">
+    <a href="https://github.com/Prabath397" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/prabath-jayasuriya" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:prabathjayasuriya2003@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+  </footer>
+<button id="back-to-top">⬆️ Top</button>
+<script src="script.js"></script>
+<!-- AOS Library JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
