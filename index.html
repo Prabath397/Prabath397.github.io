@@ -3,81 +3,422 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prabath's Portfolio</title>
-  <button id="dark-mode-toggle">🌙 Dark Mode</button>
+  <title>Prabath Jayasuriya | Software Engineer Portfolio</title>
   <link rel="stylesheet" href="style.css">
-<!-- AOS Library CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS Library CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <img src="profile.jpg" alt="Prabath's Profile Picture" id="profile-pic">
-    <h1>👨‍💻 Prabath Udayanga Jayasuriya</h1>
-    <p id="typing-text"></p>
-    <p>Software Engineering Student | Developer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+  <!-- Dark Mode Toggle -->
+  <div class="theme-toggle-container">
+    <button id="dark-mode-toggle" class="theme-toggle-btn">
+      <i class="fas fa-moon"></i> Dark Mode
+    </button>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <div class="profile-container">
+        <!-- YOUR PHOTO GOES HERE - Name it "profile.jpg" -->
+        <img src="profile.jpg" alt="Prabath Jayasuriya" id="profile-pic">
+        <div class="profile-badge">Available for Opportunities</div>
+      </div>
+      
+      <div class="hero-text">
+        <h1 class="hero-title">Prabath Udayanga Jayasuriya</h1>
+        <div class="typewriter-container">
+          <p class="hero-subtitle" id="typing-text"></p>
+        </div>
+        <p class="hero-description">Building digital solutions with passion & precision</p>
+        
+        <div class="hero-cta">
+          <a href="#contact" class="cta-btn primary-btn">
+            <i class="fas fa-paper-plane"></i> Get In Touch
+          </a>
+          <a href="#projects" class="cta-btn secondary-btn">
+            <i class="fas fa-code"></i> View Projects
+          </a>
+        </div>
+        
+        <div class="social-icons hero-social">
+          <a href="https://github.com/Prabath397" target="_blank" class="social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/prabath-jayasuriya" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:prabathjayasuriya2003@gmail.com" class="social-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="MyNewCV.pdf" download class="social-icon" aria-label="Download CV">
+            <i class="fas fa-file-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="main-nav">
+      <a href="#about" class="nav-link">
+        <i class="fas fa-user"></i> About
+      </a>
+      <a href="#experience" class="nav-link">
+        <i class="fas fa-briefcase"></i> Experience
+      </a>
+      <a href="#projects" class="nav-link">
+        <i class="fas fa-project-diagram"></i> Projects
+      </a>
+      <a href="#skills" class="nav-link">
+        <i class="fas fa-tools"></i> Skills
+      </a>
+      <a href="#education" class="nav-link">
+        <i class="fas fa-graduation-cap"></i> Education
+      </a>
+      <a href="#contact" class="nav-link">
+        <i class="fas fa-address-book"></i> Contact
+      </a>
     </nav>
   </header>
 
   <!-- About Section -->
-  <section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>Enthusiastic Software Engineering student at ICBT Campus, passionate about coding, problem-solving, and technology. Experienced in Python, C++, Java, SQL, HTML, and CSS. Skilled in teamwork, adaptability, and analytical thinking.</p>
-    <a href="MyNewCV.pdf" download class="cv-btn">📄 Download CV</a>
+  <section id="about" class="section-container" data-aos="fade-up">
+    <div class="section-header">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Get to know me better</p>
+    </div>
+    
+    <div class="about-content">
+      <div class="about-text">
+        <div class="about-intro">
+          <h3>Hello! I'm Prabath <span class="highlight">👋</span></h3>
+          <p>An enthusiastic Software Engineering student at ICBT Campus with a passion for creating impactful digital solutions. I thrive on solving complex problems and transforming ideas into functional, efficient code.</p>
+          
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <i class="fas fa-lightbulb"></i>
+              <h4>Innovative Thinker</h4>
+              <p>Constantly exploring new technologies and methodologies</p>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-code"></i>
+              <h4>Clean Coder</h4>
+              <p>Writing maintainable, efficient, and scalable code</p>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-users"></i>
+              <h4>Team Player</h4>
+              <p>Collaborating effectively to achieve shared goals</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="quick-facts">
+          <h4><i class="fas fa-info-circle"></i> Quick Facts</h4>
+          <ul>
+            <li><strong>Location:</strong> Kandana, Sri Lanka</li>
+            <li><strong>Status:</strong> Currently pursuing BSc (Hons) in Software Engineering</li>
+            <li><strong>Availability:</strong> Open to internships and collaborative projects</li>
+            <li><strong>Interests:</strong> Full-Stack Development, AI/ML, Open Source</li>
+          </ul>
+          
+          <a href="MyNewCV.pdf" download class="cv-btn">
+            <i class="fas fa-download"></i> Download Full CV
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 
-<!-- Projects Section -->
-<section id="projects" data-aos="fade-right">
-  <h2>My Projects</h2>
-  <p id="loading-message">⏳ Loading projects...</p>
-  <div class="projects-container" id="projects-container">
-    <!-- GitHub repos will be loaded here automatically -->
-  </div>
-</section>
+  <!-- Experience Section -->
+  <section id="experience" class="section-container dark-bg" data-aos="fade-right">
+    <div class="section-header">
+      <h2 class="section-title">Work Experience</h2>
+      <p class="section-subtitle">My professional journey</p>
+    </div>
+    
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">Feb 2025 - Present</div>
+        <div class="timeline-content">
+          <h3>Administrative Supervisor</h3>
+          <h4>Citypak by Advantis Head Office, Colombo Branch</h4>
+          <ul>
+            <li>Oversee administrative operations to ensure efficiency and accuracy</li>
+            <li>Manage and coordinate daily office tasks, ensuring smooth workflow</li>
+            <li>Assist with data entry and document processing</li>
+            <li>Promoted to permanent position after successful internship</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-date">May 2024 - Jan 2025</div>
+        <div class="timeline-content">
+          <h3>Data Entry Intern</h3>
+          <h4>Citypak by Advantis Head Office, Colombo Branch</h4>
+          <ul>
+            <li>Entered, updated, and maintained company records with high accuracy</li>
+            <li>Assisted with administrative tasks and supported operation team</li>
+            <li>Gained hands-on experience in office management and data processing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section-container" data-aos="fade-left">
+    <div class="section-header">
+      <h2 class="section-title">Education</h2>
+      <p class="section-subtitle">My learning path</p>
+    </div>
+    
+    <div class="education-grid">
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="education-content">
+          <h3>BSc (Hons) in Software Engineering</h3>
+          <h4>ICBT Campus</h4>
+          <p class="education-period">2024 - Present</p>
+          <p>Currently pursuing degree with focus on modern software development practices</p>
+        </div>
+      </div>
+      
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-school"></i>
+        </div>
+        <div class="education-content">
+          <h3>G.C.E. Advanced Level</h3>
+          <h4>De Mazenod College, Kandana</h4>
+          <p class="education-period">2023 (English Medium)</p>
+          <div class="grades">
+            <span class="grade-badge">ICT: B</span>
+            <span class="grade-badge">Combined Maths: S</span>
+            <span class="grade-badge">Physics: S</span>
+            <span class="grade-badge">General English: A</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <div class="education-content">
+          <h3>Cambridge GCE Ordinary Level</h3>
+          <h4>OKI International School, Kandana</h4>
+          <p class="education-period">2019 May/June (English Medium)</p>
+          <div class="grades">
+            <span class="grade-badge">Mathematics: A</span>
+            <span class="grade-badge">Sinhala: A</span>
+            <span class="grade-badge">Computer Science: B</span>
+            <span class="grade-badge">Physics/Chemistry/Biology: B</span>
+            <span class="grade-badge">English Language: C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-container dark-bg" data-aos="fade-up">
+    <div class="section-header">
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-subtitle">Explore my work</p>
+    </div>
+    
+    <p id="loading-message" class="loading-text">
+      <i class="fas fa-spinner fa-spin"></i> Loading projects from GitHub...
+    </p>
+    
+    <div class="projects-container" id="projects-container">
+      <!-- GitHub repos will be loaded here automatically -->
+    </div>
+    
+    <div class="view-more">
+      <a href="https://github.com/Prabath397" target="_blank" class="github-link">
+        <i class="fab fa-github"></i> View All Projects on GitHub
+      </a>
+    </div>
+  </section>
 
   <!-- Skills Section -->
-  <section id="skills" data-aos="fade-left">
-    <h2>Skills</h2>
-    <p><strong>Programming:</strong> Python, C++, Java, SQL</p>
-    <p><strong>Web:</strong> HTML, CSS, JavaScript</p>
-    <p><strong>Other:</strong> OOP, Git/GitHub, Networking, Database Management</p>
+  <section id="skills" class="section-container" data-aos="zoom-in">
+    <div class="section-header">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">Technologies I work with</p>
+    </div>
+    
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3><i class="fas fa-globe"></i> Web Development</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">WAMP</span>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3><i class="fas fa-database"></i> Database & Tools</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">SQL Server</span>
+          <span class="skill-tag">Git/GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Android Studio</span>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3><i class="fas fa-brain"></i> Core Concepts</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">OOP</span>
+          <span class="skill-tag">Data Structures</span>
+          <span class="skill-tag">SDLC</span>
+          <span class="skill-tag">Networking</span>
+          <span class="skill-tag">Database Design</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" data-aos="zoom-in">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:prabathjayasuriya2003@gmail.com">prabathjayasuriya2003@gmail.com</a></p>
-    <p>LinkedIn: <a href="www.linkedin.com/in/prabath-jayasuriya">linkedin.com/in/prabath-jayasuriya</a></p>
-    <p>GitHub: <a href="https://github.com/Prabath397">github.com/Prabath397</a></p>
-  <form action="mailto:prabathjayasuriya2003@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
+  <section id="contact" class="section-container dark-bg" data-aos="fade-up">
+    <div class="section-header">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Let's build something amazing together</p>
+    </div>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:prabathjayasuriya2003@gmail.com">prabathjayasuriya2003@gmail.com</a>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <p>077-3013042</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Location</h4>
+            <p>46/C/1, Jayasuriya Lane, Hapugoda, Kandana</p>
+          </div>
+        </div>
+        
+        <div class="contact-social">
+          <a href="https://www.linkedin.com/in/prabath-jayasuriya" target="_blank" class="contact-social-link">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/Prabath397" target="_blank" class="contact-social-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <form action="mailto:prabathjayasuriya2003@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <i class="fas fa-user"></i>
+          </div>
+          
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <i class="fas fa-envelope"></i>
+          </div>
+          
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <i class="fas fa-comment"></i>
+          </div>
+          
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Prabath Udayanga Jayasuriya</p>
-  <div class="social-icons">
-    <a href="https://github.com/Prabath397" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/prabath-jayasuriya" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="mailto:prabathjayasuriya2003@gmail.com"><i class="fas fa-envelope"></i></a>
-  </div>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>Prabath Jayasuriya</h3>
+        <p>Software Engineering Student & Developer</p>
+      </div>
+      
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      
+      <div class="footer-social">
+        <a href="https://github.com/Prabath397" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/prabath-jayasuriya" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:prabathjayasuriya2003@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2026 Prabath Udayanga Jayasuriya. All rights reserved.</p>
+      <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i></p>
+    </div>
   </footer>
-<button id="back-to-top">⬆️ Top</button>
-<script src="script.js"></script>
-<!-- AOS Library JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <!-- AOS Library JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
 </body>
 </html>
