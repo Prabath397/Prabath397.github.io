@@ -6,6 +6,8 @@ A modern, responsive portfolio website showcasing my skills, projects, and profe
 ## 🚀 Live Website
 🔗 [Visit Portfolio](https://Prabath397.github.io)
 
+---
+
 ## 🛠️ Technologies Used
 - HTML5 - Semantic markup
 - CSS3 - Modern styling with Flexbox/Grid
