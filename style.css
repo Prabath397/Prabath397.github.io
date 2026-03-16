@@ -409,8 +409,7 @@ body.dark-mode .section-subtitle {
 }
 
 .cv-btn:hover {
-  background: #e65c00;
-  transform: translateY(-3px);
+  background: #264f7f;
   box-shadow: 0 10px 20px rgba(14, 60, 120, 0.3);
 }
 
@@ -890,8 +889,7 @@ body.dark-mode .loading-text {
 }
 
 .submit-btn:hover {
-  background: #e65c00;
-  transform: translateY(-3px);
+  background: #264f7f;
   box-shadow: 0 10px 20px rgba(14, 60, 120, 0.3);
 }
 
@@ -1000,8 +998,7 @@ footer {
 }
 
 .back-to-top-btn:hover {
-  background: #e65c00;
-  transform: translateY(-5px);
+  background: #264f7f;
 }
 
 /* ===== DARK MODE ADJUSTMENTS ===== */
