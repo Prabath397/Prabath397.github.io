@@ -33,7 +33,7 @@ body.dark-mode {
 }
 
 .theme-toggle-btn {
-  background: rgba(255, 102, 0, 0.9);
+  background: rgba(14, 60, 120, 0.9);
   color: white;
   border: none;
   padding: 12px 20px;
@@ -44,17 +44,17 @@ body.dark-mode {
   align-items: center;
   gap: 8px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(14, 60, 120, 0.3);
 }
 
 .theme-toggle-btn:hover {
-  background: #ff6600;
+  background: #1f4e79;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 102, 0, 0.4);
+  box-shadow: 0 6px 20px rgba(14, 60, 120, 0.4);
 }
 
 body.dark-mode .theme-toggle-btn {
-  background: rgba(255, 102, 0, 0.8);
+  background: rgba(14, 60, 120, 0.8);
 }
 
 /* ===== HERO SECTION ===== */
@@ -77,7 +77,7 @@ body.dark-mode .theme-toggle-btn {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(255, 102, 0, 0.1), rgba(0, 150, 255, 0.1));
+  background: linear-gradient(45deg, rgba(14, 60, 120, 0.1), rgba(0, 150, 255, 0.1));
   z-index: 0;
 }
 
@@ -101,21 +101,21 @@ body.dark-mode .theme-toggle-btn {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid rgba(255, 102, 0, 0.3);
+  border: 5px solid rgba(14, 60, 120, 0.3);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
 #profile-pic:hover {
   transform: scale(1.05);
-  border-color: #ff6600;
+  border-color: #1f4e79;
 }
 
 .profile-badge {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background: #ff6600;
+  background: #1f4e79;
   color: white;
   padding: 8px 15px;
   border-radius: 20px;
@@ -134,7 +134,7 @@ body.dark-mode .theme-toggle-btn {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 10px;
-  background: linear-gradient(45deg, #ff6600, #ff9966);
+  background: linear-gradient(45deg, #1f4e79, #4f7acb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -181,9 +181,9 @@ body.dark-mode .theme-toggle-btn {
 }
 
 .primary-btn {
-  background: #ff6600;
+  background: #1f4e79;
   color: white;
-  border: 2px solid #ff6600;
+  border: 2px solid #1f4e79;
 }
 
 .primary-btn:hover {
@@ -223,7 +223,7 @@ body.dark-mode .theme-toggle-btn {
 }
 
 .social-icon:hover {
-  background: #ff6600;
+  background: #1f4e79;
   transform: translateY(-5px) rotate(10deg);
 }
 
@@ -253,8 +253,8 @@ body.dark-mode .theme-toggle-btn {
 }
 
 .nav-link:hover {
-  background: rgba(255, 102, 0, 0.2);
-  color: #ff6600;
+  background: rgba(14, 60, 120, 0.2);
+  color: #1f4e79;
 }
 
 /* ===== SECTION STYLES ===== */
@@ -313,7 +313,7 @@ body.dark-mode .section-subtitle {
 }
 
 .highlight {
-  color: #ff6600;
+  color: #1f4e79;
 }
 
 .about-intro p {
@@ -346,7 +346,7 @@ body.dark-mode .section-subtitle {
 
 .highlight-card i {
   font-size: 2.5rem;
-  color: #ff6600;
+  color: #1f4e79;
   margin-bottom: 20px;
 }
 
@@ -362,7 +362,7 @@ body.dark-mode .section-subtitle {
 }
 
 .quick-facts {
-  background: rgba(255, 102, 0, 0.1);
+  background: rgba(14, 60, 120, 0.1);
   padding: 30px;
   border-radius: 15px;
   margin-top: 40px;
@@ -390,7 +390,7 @@ body.dark-mode .section-subtitle {
 
 .quick-facts li::before {
   content: '▸';
-  color: #ff6600;
+  color: #1f4e79;
   position: absolute;
   left: 0;
 }
@@ -400,7 +400,7 @@ body.dark-mode .section-subtitle {
   align-items: center;
   gap: 10px;
   padding: 15px 30px;
-  background: #ff6600;
+  background: #1f4e79;
   color: white;
   text-decoration: none;
   border-radius: 30px;
@@ -411,7 +411,7 @@ body.dark-mode .section-subtitle {
 .cv-btn:hover {
   background: #e65c00;
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(255, 102, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(14, 60, 120, 0.3);
 }
 
 /* ===== TIMELINE ===== */
@@ -428,7 +428,7 @@ body.dark-mode .section-subtitle {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #ff6600;
+  background: #1f4e79;
 }
 
 .timeline-item {
@@ -440,7 +440,7 @@ body.dark-mode .section-subtitle {
 .timeline-date {
   width: 120px;
   padding: 10px;
-  background: #ff6600;
+  background: #1f4e79;
   color: white;
   border-radius: 20px;
   text-align: center;
@@ -482,7 +482,7 @@ body.dark-mode .section-subtitle {
 
 .timeline-content li::before {
   content: '✓';
-  color: #ff6600;
+  color: #1f4e79;
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -523,7 +523,7 @@ body.dark-mode .section-subtitle {
 .education-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 102, 0, 0.1);
+  background: rgba(14, 60, 120, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -533,7 +533,7 @@ body.dark-mode .section-subtitle {
 
 .education-icon i {
   font-size: 1.5rem;
-  color: #ff6600;
+  color: #1f4e79;
 }
 
 .education-content {
@@ -555,7 +555,7 @@ body.dark-mode .section-subtitle {
 }
 
 .education-period {
-  color: #ff6600;
+  color: #1f4e79;
   font-weight: 600;
   margin-bottom: 15px;
   display: block;
@@ -575,8 +575,8 @@ body.dark-mode .section-subtitle {
 }
 
 .grade-badge {
-  background: rgba(255, 102, 0, 0.1);
-  color: #ff6600;
+  background: rgba(14, 60, 120, 0.1);
+  color: #1f4e79;
   padding: 8px 15px;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -653,8 +653,8 @@ body.dark-mode .loading-text {
 }
 
 .tech-tag {
-  background: rgba(255, 102, 0, 0.1);
-  color: #ff6600;
+  background: rgba(14, 60, 120, 0.1);
+  color: #1f4e79;
   padding: 5px 15px;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -694,7 +694,7 @@ body.dark-mode .loading-text {
 }
 
 .project-link:hover {
-  background: #ff6600;
+  background: #1f4e79;
   transform: translateY(-2px);
 }
 
@@ -753,8 +753,8 @@ body.dark-mode .loading-text {
 }
 
 .skill-tag {
-  background: rgba(255, 102, 0, 0.1);
-  color: #ff6600;
+  background: rgba(14, 60, 120, 0.1);
+  color: #1f4e79;
   padding: 8px 20px;
   border-radius: 25px;
   font-weight: 500;
@@ -762,7 +762,7 @@ body.dark-mode .loading-text {
 }
 
 .skill-tag:hover {
-  background: #ff6600;
+  background: #1f4e79;
   color: white;
   transform: translateY(-2px);
 }
@@ -791,13 +791,13 @@ body.dark-mode .loading-text {
 .contact-item i {
   width: 60px;
   height: 60px;
-  background: rgba(255, 102, 0, 0.1);
+  background: rgba(14, 60, 120, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: #ff6600;
+  color: #1f4e79;
 }
 
 .contact-item h4 {
@@ -830,7 +830,7 @@ body.dark-mode .loading-text {
 }
 
 .contact-social-link:hover {
-  background: #ff6600;
+  background: #1f4e79;
   color: white;
 }
 
@@ -868,14 +868,14 @@ body.dark-mode .loading-text {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #ff6600;
-  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.1);
+  border-color: #1f4e79;
+  box-shadow: 0 0 0 3px rgba(14, 60, 120, 0.1);
 }
 
 .submit-btn {
   width: 100%;
   padding: 15px;
-  background: #ff6600;
+  background: #1f4e79;
   color: white;
   border: none;
   border-radius: 10px;
@@ -892,7 +892,7 @@ body.dark-mode .loading-text {
 .submit-btn:hover {
   background: #e65c00;
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(255, 102, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(14, 60, 120, 0.3);
 }
 
 /* ===== FOOTER ===== */
@@ -914,7 +914,7 @@ footer {
 .footer-logo h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  background: linear-gradient(45deg, #ff6600, #ff9966);
+  background: linear-gradient(45deg, #1f4e79, #4f7acb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -933,7 +933,7 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #ff6600;
+  color: #1f4e79;
 }
 
 .footer-social {
@@ -955,7 +955,7 @@ footer {
 }
 
 .footer-social a:hover {
-  background: #ff6600;
+  background: #1f4e79;
   transform: translateY(-5px);
 }
 
@@ -975,7 +975,7 @@ footer {
 }
 
 .footer-bottom .fa-code {
-  color: #ff6600;
+  color: #1f4e79;
 }
 
 /* ===== BACK TO TOP ===== */
@@ -985,7 +985,7 @@ footer {
   right: 30px;
   width: 60px;
   height: 60px;
-  background: #ff6600;
+  background: #1f4e79;
   color: white;
   border: none;
   border-radius: 50%;
@@ -996,7 +996,7 @@ footer {
   justify-content: center;
   z-index: 1000;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(14, 60, 120, 0.3);
 }
 
 .back-to-top-btn:hover {
@@ -1039,7 +1039,7 @@ body.dark-mode .form-group textarea {
 
 body.dark-mode .form-group input:focus,
 body.dark-mode .form-group textarea:focus {
-  border-color: #ff6600;
+  border-color: #1f4e79;
 }
 
 body.dark-mode .contact-social-link {
