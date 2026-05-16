@@ -3,422 +3,449 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prabath Jayasuriya | Software Engineer Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- AOS Library CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Font Awesome Icons -->
+  <meta name="description" content="Portfolio of Prabath Udayanga Jayasuriya, a Software Engineering student in Sri Lanka with knowledge across web, mobile, desktop applications, analytics, UI/UX, databases, networking, SDLC, and project management.">
+  <meta name="author" content="Prabath Udayanga Jayasuriya">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="Prabath Jayasuriya | Software Engineering Portfolio">
+  <meta property="og:description" content="Versatile software engineering student with knowledge across development, design, data, systems, and project delivery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://Prabath397.github.io">
+  <meta property="og:image" content="profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <title>Prabath Jayasuriya | Software Engineering Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Dark Mode Toggle -->
-  <div class="theme-toggle-container">
-    <button id="dark-mode-toggle" class="theme-toggle-btn">
-      <i class="fas fa-moon"></i> Dark Mode
-    </button>
-  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Hero Section -->
-  <header class="hero-section">
-    <div class="hero-content">
-      <div class="profile-container">
-        <!-- YOUR PHOTO GOES HERE - Name it "profile.jpg" -->
-        <img src="profile.jpg" alt="Prabath Jayasuriya" id="profile-pic">
-        <div class="profile-badge">Available for Opportunities</div>
-      </div>
-      
-      <div class="hero-text">
-        <h1 class="hero-title">Prabath Udayanga Jayasuriya</h1>
-        <div class="typewriter-container">
-          <p class="hero-subtitle" id="typing-text"></p>
-        </div>
-        <p class="hero-description">Building digital solutions with passion & precision</p>
-        
-        <div class="hero-cta">
-          <a href="#contact" class="cta-btn primary-btn">
-            <i class="fas fa-paper-plane"></i> Get In Touch
-          </a>
-          <a href="#projects" class="cta-btn secondary-btn">
-            <i class="fas fa-code"></i> View Projects
-          </a>
-        </div>
-        
-        <div class="social-icons hero-social">
-          <a href="https://github.com/Prabath397" target="_blank" class="social-icon" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/prabath-jayasuriya" target="_blank" class="social-icon" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:prabathjayasuriya2003@gmail.com" class="social-icon" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="MyNewCV.pdf" download class="social-icon" aria-label="Download CV">
-            <i class="fas fa-file-download"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <nav class="main-nav">
-      <a href="#about" class="nav-link">
-        <i class="fas fa-user"></i> About
-      </a>
-      <a href="#experience" class="nav-link">
-        <i class="fas fa-briefcase"></i> Experience
-      </a>
-      <a href="#projects" class="nav-link">
-        <i class="fas fa-project-diagram"></i> Projects
-      </a>
-      <a href="#skills" class="nav-link">
-        <i class="fas fa-tools"></i> Skills
-      </a>
-      <a href="#education" class="nav-link">
-        <i class="fas fa-graduation-cap"></i> Education
-      </a>
-      <a href="#contact" class="nav-link">
-        <i class="fas fa-address-book"></i> Contact
-      </a>
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="Prabath Jayasuriya home">
+      <img class="brand-photo" src="profile.jpg" alt="Prabath Jayasuriya">
+      <span class="brand-text">Prabath Jayasuriya</span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="icon-button nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section-container" data-aos="fade-up">
-    <div class="section-header">
-      <h2 class="section-title">About Me</h2>
-      <p class="section-subtitle">Get to know me better</p>
-    </div>
-    
-    <div class="about-content">
-      <div class="about-text">
-        <div class="about-intro">
-          <h3>Hello! I'm Prabath <span class="highlight">👋</span></h3>
-          <p>An enthusiastic Software Engineering student at ICBT Campus with a passion for creating impactful digital solutions. I thrive on solving complex problems and transforming ideas into functional, efficient code.</p>
-          
-          <div class="about-highlights">
-            <div class="highlight-card">
-              <i class="fas fa-lightbulb"></i>
-              <h4>Innovative Thinker</h4>
-              <p>Constantly exploring new technologies and methodologies</p>
-            </div>
-            <div class="highlight-card">
-              <i class="fas fa-code"></i>
-              <h4>Clean Coder</h4>
-              <p>Writing maintainable, efficient, and scalable code</p>
-            </div>
-            <div class="highlight-card">
-              <i class="fas fa-users"></i>
-              <h4>Team Player</h4>
-              <p>Collaborating effectively to achieve shared goals</p>
-            </div>
-          </div>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <div class="hero-kicker">
+          <span class="status-dot"></span>
+          Open to internships and junior software roles
         </div>
-        
-        <div class="quick-facts">
-          <h4><i class="fas fa-info-circle"></i> Quick Facts</h4>
-          <ul>
-            <li><strong>Location:</strong> Kandana, Sri Lanka</li>
-            <li><strong>Status:</strong> Currently pursuing BSc (Hons) in Software Engineering</li>
-            <li><strong>Availability:</strong> Open to internships and collaborative projects</li>
-            <li><strong>Interests:</strong> Full-Stack Development, AI/ML, Open Source</li>
-          </ul>
-          
-          <a href="MyNewCV.pdf" download class="cv-btn">
-            <i class="fas fa-download"></i> Download Full CV
+        <img class="hero-avatar" src="profile.jpg" alt="Portrait of Prabath Udayanga Jayasuriya">
+        <h1 id="hero-title">Prabath Udayanga Jayasuriya</h1>
+        <p class="hero-role">Software Engineering Student · Versatile Technology Learner · Practical Problem Solver</p>
+        <p class="hero-copy">
+          I build clean, usable solutions while growing knowledge across web, mobile,
+          desktop applications, analytics, UI/UX, databases, networking, SDLC, and
+          project management.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">
+            <i class="fas fa-code"></i>
+            View Work
+          </a>
+          <a class="button button-secondary" href="MyNewCV.pdf" download>
+            <i class="fas fa-file-arrow-down"></i>
+            Download CV
+          </a>
+          <a class="button button-ghost" href="#contact">
+            <i class="fas fa-paper-plane"></i>
+            Contact Me
           </a>
         </div>
+        <dl class="hero-metrics" aria-label="Portfolio highlights">
+          <div>
+            <dt>2024 - Present</dt>
+            <dd>Higher Diploma in Computing and Software Engineering</dd>
+          </div>
+          <div>
+            <dt>Wide skill set</dt>
+            <dd>Development, design, data, systems, and delivery</dd>
+          </div>
+          <div>
+            <dt>Sri Lanka</dt>
+            <dd>Based in Kandana</dd>
+          </div>
+        </dl>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="section-container dark-bg" data-aos="fade-right">
-    <div class="section-header">
-      <h2 class="section-title">Work Experience</h2>
-      <p class="section-subtitle">My professional journey</p>
-    </div>
-    
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-date">Feb 2025 - Present</div>
-        <div class="timeline-content">
-          <h3>Administrative Supervisor</h3>
-          <h4>Citypak by Advantis Head Office, Colombo Branch</h4>
-          <ul>
-            <li>Oversee administrative operations to ensure efficiency and accuracy</li>
-            <li>Manage and coordinate daily office tasks, ensuring smooth workflow</li>
-            <li>Assist with data entry and document processing</li>
-            <li>Promoted to permanent position after successful internship</li>
-          </ul>
+    <section class="section section-light" id="about">
+      <div class="section-shell two-column">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Building steady engineering habits through real projects.</h2>
+        </div>
+        <div class="section-copy">
+          <p>
+            I am currently following the Higher Diploma in Computing and Software Engineering
+            at ICBT Campus, delivered with Cardiff Metropolitan University and leading toward
+            the BSc (Hons) pathway. My focus is on becoming the kind of engineer who can
+            connect knowledge from different modules, understand the problem, structure the
+            solution, and keep improving the implementation after it works.
+          </p>
+          <p>
+            My administrative and data-entry experience has also shaped how I approach software:
+            accuracy matters, workflows matter, and small reliability improvements can make daily work much easier.
+          </p>
         </div>
       </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-date">May 2024 - Jan 2025</div>
-        <div class="timeline-content">
-          <h3>Data Entry Intern</h3>
-          <h4>Citypak by Advantis Head Office, Colombo Branch</h4>
-          <ul>
-            <li>Entered, updated, and maintained company records with high accuracy</li>
-            <li>Assisted with administrative tasks and supported operation team</li>
-            <li>Gained hands-on experience in office management and data processing</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Education Section -->
-  <section id="education" class="section-container" data-aos="fade-left">
-    <div class="section-header">
-      <h2 class="section-title">Education</h2>
-      <p class="section-subtitle">My learning path</p>
-    </div>
-    
-    <div class="education-grid">
-      <div class="education-card">
-        <div class="education-icon">
-          <i class="fas fa-university"></i>
-        </div>
-        <div class="education-content">
-          <h3>BSc (Hons) in Software Engineering</h3>
-          <h4>ICBT Campus</h4>
-          <p class="education-period">2024 - Present</p>
-          <p>Currently pursuing degree with focus on modern software development practices</p>
-        </div>
+      <div class="section-shell focus-grid" aria-label="Professional strengths">
+        <article class="focus-card">
+          <i class="fas fa-compass-drafting"></i>
+          <h3>Product Mindset</h3>
+          <p>I care about clarity, usable interfaces, and software that helps people complete real tasks.</p>
+        </article>
+        <article class="focus-card">
+          <i class="fas fa-layer-group"></i>
+          <h3>Strong Foundations</h3>
+          <p>I am building depth across web, mobile, desktop applications, analytics, UI/UX, databases, SDLC, networking, and core CS concepts.</p>
+        </article>
+        <article class="focus-card">
+          <i class="fas fa-handshake-angle"></i>
+          <h3>Reliable Collaboration</h3>
+          <p>I bring ownership, communication, and consistency from both academic and workplace experience.</p>
+        </article>
       </div>
-      
-      <div class="education-card">
-        <div class="education-icon">
-          <i class="fas fa-school"></i>
+    </section>
+
+    <section class="section section-ink" id="work">
+      <div class="section-shell section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects with clear purpose and room to grow.</h2>
+        <p>
+          These are the areas I am actively developing through coursework, self-learning,
+          and GitHub practice.
+        </p>
+      </div>
+
+      <div class="section-shell featured-work">
+        <article class="work-card work-card-large">
+          <div class="work-meta">
+            <span>Portfolio</span>
+            <span>HTML · CSS · JavaScript</span>
+          </div>
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A responsive GitHub Pages portfolio with theme switching, live repository loading,
+            accessible navigation, and a recruiter-friendly content structure.
+          </p>
+          <div class="work-links">
+            <a href="https://github.com/Prabath397/Prabath397.github.io" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+              Source
+            </a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-meta">
+            <span>Learning Track</span>
+            <span>Python · Java · C++</span>
+          </div>
+          <h3>Programming Practice</h3>
+          <p>Small, focused builds that strengthen syntax, OOP, data structures, and problem solving.</p>
+        </article>
+
+        <article class="work-card">
+          <div class="work-meta">
+            <span>Systems</span>
+            <span>SQL · MySQL · WAMP</span>
+          </div>
+          <h3>Database and Web Exercises</h3>
+          <p>Coursework and experiments focused on structured data, queries, and basic web workflows.</p>
+        </article>
+      </div>
+
+      <div class="section-shell recent-work">
+        <div class="recent-heading">
+          <div>
+            <p class="eyebrow">Live From GitHub</p>
+            <h3>Recently Updated Repositories</h3>
+          </div>
+          <a class="text-link" href="https://github.com/Prabath397" target="_blank" rel="noopener noreferrer">
+            View GitHub
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
         </div>
-        <div class="education-content">
+        <p id="loading-message" class="loading-text">
+          <i class="fas fa-spinner fa-spin"></i>
+          Loading repositories...
+        </p>
+        <div class="repo-grid" id="projects-container" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="experience">
+      <div class="section-shell section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Work experience that reinforces accuracy and ownership.</h2>
+      </div>
+
+      <div class="section-shell timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">Feb 2025 - Present</div>
+          <div class="timeline-content">
+            <h3>Administrative Supervisor</h3>
+            <p class="timeline-company">Citypak by Advantis Head Office, Colombo 02</p>
+            <ul>
+              <li>Oversee administrative operations with attention to accuracy and workflow consistency.</li>
+              <li>Coordinate daily office tasks and support smooth internal operations.</li>
+              <li>Promoted to a permanent role after a successful internship period.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">May 2024 - Jan 2025</div>
+          <div class="timeline-content">
+            <h3>Data Entry Intern</h3>
+            <p class="timeline-company">Citypak by Advantis Head Office, Colombo 02</p>
+            <ul>
+              <li>Entered, updated, and maintained company records with high accuracy.</li>
+              <li>Supported administrative tasks and document processing workflows.</li>
+              <li>Built practical habits around precision, consistency, and accountability.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-light" id="education">
+      <div class="section-shell section-heading">
+        <p class="eyebrow">Education</p>
+        <h2>Academic path and foundations.</h2>
+      </div>
+
+      <div class="section-shell education-grid">
+        <article class="education-card">
+          <span class="education-year">2024 - Present</span>
+          <h3>Higher Diploma in Computing and Software Engineering</h3>
+          <p>ICBT Campus - Cardiff Metropolitan University · Leading to BSc (Hons)</p>
+        </article>
+        <article class="education-card">
+          <span class="education-year">2023</span>
           <h3>G.C.E. Advanced Level</h3>
-          <h4>De Mazenod College, Kandana</h4>
-          <p class="education-period">2023 (English Medium)</p>
-          <div class="grades">
-            <span class="grade-badge">ICT: B</span>
-            <span class="grade-badge">Combined Maths: S</span>
-            <span class="grade-badge">Physics: S</span>
-            <span class="grade-badge">General English: A</span>
+          <p>De Mazenod College, Kandana · English Medium</p>
+          <div class="grade-list" aria-label="Advanced Level grades">
+            <span>ICT: B</span>
+            <span>Combined Maths: S</span>
+            <span>Physics: S</span>
+            <span>General English: A</span>
           </div>
-        </div>
-      </div>
-      
-      <div class="education-card">
-        <div class="education-icon">
-          <i class="fas fa-certificate"></i>
-        </div>
-        <div class="education-content">
+        </article>
+        <article class="education-card">
+          <span class="education-year">2019</span>
           <h3>Cambridge GCE Ordinary Level</h3>
-          <h4>OKI International School, Kandana</h4>
-          <p class="education-period">2019 May/June (English Medium)</p>
-          <div class="grades">
-            <span class="grade-badge">Mathematics: A</span>
-            <span class="grade-badge">Sinhala: A</span>
-            <span class="grade-badge">Computer Science: B</span>
-            <span class="grade-badge">Physics/Chemistry/Biology: B</span>
-            <span class="grade-badge">English Language: C</span>
+          <p>OKI International School, Kandana · English Medium</p>
+          <div class="grade-list" aria-label="Ordinary Level grades">
+            <span>Mathematics: A</span>
+            <span>Sinhala: A</span>
+            <span>Computer Science: B</span>
+            <span>Physics/Chemistry/Biology: B</span>
+            <span>English Language: C</span>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section-container dark-bg" data-aos="fade-up">
-    <div class="section-header">
-      <h2 class="section-title">My Projects</h2>
-      <p class="section-subtitle">Explore my work</p>
-    </div>
-    
-    <p id="loading-message" class="loading-text">
-      <i class="fas fa-spinner fa-spin"></i> Loading projects from GitHub...
-    </p>
-    
-    <div class="projects-container" id="projects-container">
-      <!-- GitHub repos will be loaded here automatically -->
-    </div>
-    
-    <div class="view-more">
-      <a href="https://github.com/Prabath397" target="_blank" class="github-link">
-        <i class="fab fa-github"></i> View All Projects on GitHub
-      </a>
-    </div>
-  </section>
+    <section class="section section-muted" id="skills">
+      <div class="section-shell section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Areas I am learning and applying across software engineering.</h2>
+      </div>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section-container" data-aos="zoom-in">
-    <div class="section-header">
-      <h2 class="section-title">Technical Skills</h2>
-      <p class="section-subtitle">Technologies I work with</p>
-    </div>
-    
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3><i class="fas fa-code"></i> Programming Languages</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">C++</span>
-          <span class="skill-tag">PHP</span>
-          <span class="skill-tag">SQL</span>
-        </div>
+      <div class="section-shell skills-layout">
+        <article class="skill-panel">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>Java</span>
+            <span>C++</span>
+            <span>PHP</span>
+            <span>SQL</span>
+          </div>
+        </article>
+        <article class="skill-panel">
+          <h3><i class="fas fa-window-restore"></i> Web</h3>
+          <div class="tag-list">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive UI</span>
+          </div>
+        </article>
+        <article class="skill-panel">
+          <h3><i class="fas fa-mobile-screen-button"></i> Mobile</h3>
+          <div class="tag-list">
+            <span>Android Studio</span>
+            <span>Mobile App Concepts</span>
+            <span>App UI</span>
+          </div>
+        </article>
+        <article class="skill-panel">
+          <h3><i class="fas fa-desktop"></i> Desktop Apps</h3>
+          <div class="tag-list">
+            <span>Application Logic</span>
+            <span>OOP</span>
+            <span>Java</span>
+            <span>C++</span>
+          </div>
+        </article>
+        <article class="skill-panel">
+          <h3><i class="fas fa-chart-line"></i> Analytics</h3>
+          <div class="tag-list">
+            <span>Data Handling</span>
+            <span>SQL Queries</span>
+            <span>Reporting</span>
+            <span>Problem Analysis</span>
+          </div>
+        </article>
+        <article class="skill-panel">
+          <h3><i class="fas fa-pen-ruler"></i> UI/UX</h3>
+          <div class="tag-list">
+            <span>Interface Design</span>
+            <span>User Flow</span>
+            <span>Responsive Layouts</span>
+            <span>Visual Consistency</span>
+          </div>
+        </article>
+        <article class="skill-panel">
+          <h3><i class="fas fa-database"></i> Databases</h3>
+          <div class="tag-list">
+            <span>MySQL</span>
+            <span>SQL Server</span>
+            <span>Database Design</span>
+            <span>WAMP</span>
+          </div>
+        </article>
+        <article class="skill-panel">
+          <h3><i class="fas fa-network-wired"></i> Networks and Tools</h3>
+          <div class="tag-list">
+            <span>Networking</span>
+            <span>GitHub</span>
+            <span>VS Code</span>
+          </div>
+        </article>
+        <article class="skill-panel">
+          <h3><i class="fas fa-diagram-project"></i> SDLC and Management</h3>
+          <div class="tag-list">
+            <span>SDLC</span>
+            <span>Project Management</span>
+            <span>Teamwork</span>
+            <span>Documentation</span>
+          </div>
+        </article>
       </div>
-      
-      <div class="skill-category">
-        <h3><i class="fas fa-globe"></i> Web Development</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">WAMP</span>
-        </div>
-      </div>
-      
-      <div class="skill-category">
-        <h3><i class="fas fa-database"></i> Database & Tools</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">MySQL</span>
-          <span class="skill-tag">SQL Server</span>
-          <span class="skill-tag">Git/GitHub</span>
-          <span class="skill-tag">VS Code</span>
-          <span class="skill-tag">Android Studio</span>
-        </div>
-      </div>
-      
-      <div class="skill-category">
-        <h3><i class="fas fa-brain"></i> Core Concepts</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">OOP</span>
-          <span class="skill-tag">Data Structures</span>
-          <span class="skill-tag">SDLC</span>
-          <span class="skill-tag">Networking</span>
-          <span class="skill-tag">Database Design</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section-container dark-bg" data-aos="fade-up">
-    <div class="section-header">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="section-subtitle">Let's build something amazing together</p>
-    </div>
-    
-    <div class="contact-container">
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <div>
-            <h4>Email</h4>
-            <a href="mailto:prabathjayasuriya2003@gmail.com">prabathjayasuriya2003@gmail.com</a>
+    <section class="section contact-section" id="contact">
+      <div class="section-shell contact-layout">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s talk about internships, junior roles, or collaborative builds.</h2>
+          <p>
+            The fastest way to reach me is by email or LinkedIn. I am based in Kandana,
+            Sri Lanka and open to opportunities where I can learn, contribute, and grow.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:prabathjayasuriya2003@gmail.com">
+              <i class="fas fa-envelope"></i>
+              prabathjayasuriya2003@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/prabath-jayasuriya" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Prabath397" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
           </div>
         </div>
-        
-        <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <div>
-            <h4>Phone</h4>
-            <p>077-3013042</p>
-          </div>
-        </div>
-        
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <div>
-            <h4>Location</h4>
-            <p>46/C/1, Jayasuriya Lane, Hapugoda, Kandana</p>
-          </div>
-        </div>
-        
-        <div class="contact-social">
-          <a href="https://www.linkedin.com/in/prabath-jayasuriya" target="_blank" class="contact-social-link">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a href="https://github.com/Prabath397" target="_blank" class="contact-social-link">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-        </div>
-      </div>
-      
-      <div class="contact-form">
-        <form action="mailto:prabathjayasuriya2003@gmail.com" method="post" enctype="text/plain">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <i class="fas fa-user"></i>
-          </div>
-          
-          <div class="form-group">
-            <input type="email" name="email" placeholder="Your Email" required>
-            <i class="fas fa-envelope"></i>
-          </div>
-          
-          <div class="form-group">
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <i class="fas fa-comment"></i>
-          </div>
-          
-          <button type="submit" class="submit-btn">
-            <i class="fas fa-paper-plane"></i> Send Message
+
+        <form class="contact-form" id="contact-form" action="mailto:prabathjayasuriya2003@gmail.com" method="post" enctype="text/plain">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
           </button>
         </form>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <h3>Prabath Jayasuriya</h3>
-        <p>Software Engineering Student & Developer</p>
-      </div>
-      
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Prabath Udayanga Jayasuriya</p>
       <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="MyNewCV.pdf" download>CV</a>
+        <a href="mailto:prabathjayasuriya2003@gmail.com">Email</a>
+        <a href="https://github.com/Prabath397" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
-      
-      <div class="footer-social">
-        <a href="https://github.com/Prabath397" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/prabath-jayasuriya" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:prabathjayasuriya2003@gmail.com" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>© 2026 Prabath Udayanga Jayasuriya. All rights reserved.</p>
-      <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i></p>
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
-  <button id="back-to-top" class="back-to-top-btn">
-    <i class="fas fa-chevron-up"></i>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
   </button>
 
-  <!-- Scripts -->
-  <script src="script.js"></script>
-  <!-- AOS Library JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-      offset: 100
-    });
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Prabath Udayanga Jayasuriya",
+      "url": "https://Prabath397.github.io",
+      "image": "profile.jpg",
+      "jobTitle": "Software Engineering Student",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kandana",
+        "addressCountry": "Sri Lanka"
+      },
+      "sameAs": [
+        "https://github.com/Prabath397",
+        "https://www.linkedin.com/in/prabath-jayasuriya"
+      ]
+    }
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
