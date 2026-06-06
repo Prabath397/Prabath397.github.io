@@ -34,7 +34,7 @@ The site presents my software engineering background, selected work, education, 
 |-- index.html      # Main page markup and metadata
 |-- style.css       # Theme, layout, responsive, and component styles
 |-- script.js       # Theme toggle, navigation behavior, GitHub feed, and contact form logic
-|-- profile.jpg     # Profile image used across the site
+|-- profile.png     # Profile image used across the site
 |-- MyNewCV.pdf     # Downloadable CV
 |-- LICENSE.txt
 `-- README.md
