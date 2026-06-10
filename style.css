@@ -771,6 +771,8 @@ textarea {
 }
 
 .certifications-layout {
+  display: grid;
+  gap: 22px;
   margin-top: 48px;
 }
 
