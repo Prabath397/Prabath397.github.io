@@ -8,7 +8,56 @@ const contactForm = document.getElementById("contact-form");
 const projectsContainer = document.getElementById("projects-container");
 const loadingMessage = document.getElementById("loading-message");
 
-const username = "Prabath397";
+const pinnedRepositories = [
+  {
+    name: "Cinnamon-Export-Management-System",
+    description: "Web-based cinnamon export management system with buyer, supplier, and admin modules.",
+    language: "PHP",
+    color: "#4f5d95",
+    stars: 1,
+    url: "https://github.com/Prabath397/Cinnamon-Export-Management-System"
+  },
+  {
+    name: "EcoStay-Retreat-Android-App",
+    description: "Android resort booking app built with Java and SQLite for eco-room bookings, activities, notifications, and admin management.",
+    language: "Java",
+    color: "#b07219",
+    stars: 1,
+    url: "https://github.com/Prabath397/EcoStay-Retreat-Android-App"
+  },
+  {
+    name: "Mern-AI-Support-Chatbot",
+    description: "ChatGPT-style MERN AI assistant with JWT auth, MongoDB conversations, file attachments, OCR image reading, admin dashboard, and OpenRouter AI integration.",
+    language: "JavaScript",
+    color: "#f1e05a",
+    stars: 1,
+    url: "https://github.com/Prabath397/Mern-AI-Support-Chatbot"
+  },
+  {
+    name: "Enterprise-Smart-Courier-System",
+    description: "Full-stack logistics SaaS with Spring Boot, PostgreSQL, React, Docker, JWT auth, parcel tracking, warehouse workflows, delivery management, and reports.",
+    language: "Java",
+    color: "#b07219",
+    stars: 1,
+    url: "https://github.com/Prabath397/Enterprise-Smart-Courier-System"
+  },
+  {
+    name: "Cozy-Comfort-SOC-System-ASP.NET-Core",
+    description: "Service-oriented blanket ordering and inventory management system built with ASP.NET Core Web API, SQL Server, PHP and JavaScript.",
+    language: "C#",
+    color: "#178600",
+    stars: 1,
+    url: "https://github.com/Prabath397/Cozy-Comfort-SOC-System-ASP.NET-Core"
+  },
+  {
+    name: "Dockerized-Student-Task-Manager",
+    description: "Student task management web app built with Flask, MySQL, Docker, and Docker Compose.",
+    language: "Python",
+    color: "#3572A5",
+    stars: 1,
+    url: "https://github.com/Prabath397/Dockerized-Student-Task-Manager"
+  }
+];
 
 function setTheme(isDark) {
   body.classList.toggle("dark-mode", isDark);
@@ -103,114 +152,35 @@ function safeUrl(value, fallback = "#") {
   }
 }
 
-function formatRepoName(name) {
-  return String(name)
-    .replaceAll("-", " ")
-    .replaceAll("_", " ")
-    .replace(/\b\w/g, letter => letter.toUpperCase());
-}
-
-const techKeywords = {
-  Python: ["python", "django", "flask"],
-  Java: ["java", "spring", "android"],
-  JavaScript: ["javascript", "node", "react", "vue"],
-  "C++": ["c++", "cpp"],
-  Web: ["html", "css", "bootstrap"],
-  SQL: ["sql", "mysql", "database"]
-};
-
-function detectTechnologies(repo) {
-  const searchableText = [
-    repo.name,
-    repo.description,
-    repo.language,
-    ...(repo.topics || [])
-  ].join(" ").toLowerCase();
-
-  const detected = Object.entries(techKeywords)
-    .filter(([, keywords]) => keywords.some(keyword => searchableText.includes(keyword)))
-    .map(([label]) => label);
-
-  if (repo.language && !detected.includes(repo.language)) {
-    detected.unshift(repo.language);
-  }
-
-  return [...new Set(detected)].slice(0, 4);
-}
-
 function renderRepoCard(repo) {
-  const repoName = escapeHTML(formatRepoName(repo.name));
+  const repoName = escapeHTML(repo.name);
   const description = escapeHTML(repo.description || "A practical coding repository from my learning and development work.");
-  const repoUrl = escapeHTML(safeUrl(repo.html_url));
-  const updatedDate = new Date(repo.updated_at).toLocaleDateString(undefined, {
-    month: "short",
-    day: "numeric",
-    year: "numeric"
-  });
-  const technologies = detectTechnologies(repo);
+  const repoUrl = escapeHTML(safeUrl(repo.url));
+  const language = escapeHTML(repo.language || "Code");
+  const color = escapeHTML(repo.color || "#0969da");
+  const stars = Number.isFinite(repo.stars) ? repo.stars : 0;
 
   return `
-    <article class="repo-card">
-      <h4>${repoName}</h4>
-      <p>${description}</p>
-      <div class="repo-tags">
-        ${(technologies.length ? technologies : ["Code"]).map(tech => `<span>${escapeHTML(tech)}</span>`).join("")}
+    <article class="repo-card pinned-repo-card">
+      <div class="repo-title-row">
+        <i class="far fa-window-maximize repo-icon" aria-hidden="true"></i>
+        <h4><a href="${repoUrl}" target="_blank" rel="noopener noreferrer">${repoName}</a></h4>
+        <span class="repo-visibility">Public</span>
       </div>
+      <p>${description}</p>
       <div class="repo-footer">
-        <span><i class="fas fa-clock"></i> ${updatedDate}</span>
-        <a href="${repoUrl}" target="_blank" rel="noopener noreferrer">
-          View
-          <i class="fas fa-arrow-up-right-from-square"></i>
-        </a>
+        <span class="repo-language"><span class="language-dot" style="--repo-language-color: ${color};"></span>${language}</span>
+        <span><i class="far fa-star"></i> ${stars}</span>
       </div>
     </article>
   `;
 }
 
-async function loadRepositories() {
+function loadRepositories() {
   if (!projectsContainer || !loadingMessage) return;
 
-  try {
-    const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=12`);
-    if (!response.ok) throw new Error("GitHub API request failed");
-
-    const repos = await response.json();
-    const visibleRepos = repos
-      .filter(repo => !repo.fork && !repo.archived)
-      .sort((a, b) => new Date(b.pushed_at || b.updated_at) - new Date(a.pushed_at || a.updated_at))
-      .slice(0, 6);
-
-    loadingMessage.hidden = true;
-
-    if (!visibleRepos.length) {
-      projectsContainer.innerHTML = `
-        <article class="repo-card">
-          <h4>No repositories found</h4>
-          <p>Visit my GitHub profile to see my latest public work.</p>
-          <div class="repo-footer">
-            <span>GitHub</span>
-            <a href="https://github.com/${username}" target="_blank" rel="noopener noreferrer">Open profile</a>
-          </div>
-        </article>
-      `;
-      return;
-    }
-
-    projectsContainer.innerHTML = visibleRepos.map(renderRepoCard).join("");
-  } catch (error) {
-    console.error(error);
-    loadingMessage.hidden = true;
-    projectsContainer.innerHTML = `
-      <article class="repo-card">
-        <h4>Could not load repositories</h4>
-        <p>The GitHub feed is unavailable right now. You can still view my projects directly on GitHub.</p>
-        <div class="repo-footer">
-          <span>Connection issue</span>
-          <a href="https://github.com/${username}" target="_blank" rel="noopener noreferrer">Open GitHub</a>
-        </div>
-      </article>
-    `;
-  }
+  loadingMessage.hidden = true;
+  projectsContainer.innerHTML = pinnedRepositories.map(renderRepoCard).join("");
 }
 
 loadRepositories();
