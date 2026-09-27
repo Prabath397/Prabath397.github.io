@@ -1,4 +1,4 @@
-# Prabath Jayasuriya — AI-Powered Developer Portfolio
+# Prabath Jayasuriya - AI-Powered Developer Portfolio
 
 A modern, responsive developer portfolio for **Prabath Udayanga Jayasuriya** featuring an integrated **"Ask My Portfolio" AI Assistant** powered by **Google Gemini**.
 
@@ -101,10 +101,10 @@ ALLOWED_ORIGIN=http://localhost:5173
 ### 4. Running the Development Servers
 
 ```bash
-# Terminal 1 — Start the Express API Server (Port 3001):
+# Terminal 1 - Start the Express API Server (Port 3001):
 npm run dev:server
 
-# Terminal 2 — Start the Vite Frontend (Port 5173):
+# Terminal 2 - Start the Vite Frontend (Port 5173):
 npm run dev:client
 ```
 
