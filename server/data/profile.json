@@ -1,0 +1,27 @@
+{
+  "name": "Prabath Udayanga Jayasuriya",
+  "title": "Software Engineering Student",
+  "tagline": "Versatile Technology Learner · Practical Problem Solver",
+  "location": "Kandana, Sri Lanka",
+  "status": "Open to internships and junior software roles",
+  "summary": "I build clean, usable solutions while growing knowledge across web, mobile, desktop applications, analytics, UI/UX, databases, networking, SDLC, and project management.",
+  "about": "I am currently following the Higher Diploma in Computing and Software Engineering at ICBT Campus, delivered with Cardiff Metropolitan University and leading toward the BSc (Hons) pathway. My focus is on becoming the kind of engineer who can connect knowledge from different modules, understand the problem, structure the solution, and keep improving the implementation after it works. My administrative and data-entry experience has also shaped how I approach software: accuracy matters, workflows matter, and small reliability improvements can make daily work much easier.",
+  "strengths": [
+    {
+      "title": "Product Mindset",
+      "description": "I care about clarity, usable interfaces, and software that helps people complete real tasks.",
+      "icon": "fas fa-compass-drafting"
+    },
+    {
+      "title": "Strong Foundations",
+      "description": "I am building depth across web, mobile, desktop applications, analytics, UI/UX, databases, SDLC, networking, and core CS concepts.",
+      "icon": "fas fa-layer-group"
+    },
+    {
+      "title": "Reliable Collaboration",
+      "description": "I bring ownership, communication, and consistency from both academic and workplace experience.",
+      "icon": "fas fa-handshake-angle"
+    }
+  ],
+  "portfolioUrl": "https://Prabath397.github.io"
+}

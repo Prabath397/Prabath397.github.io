@@ -1,0 +1,83 @@
+{
+  "featured": [
+    {
+      "name": "Cinnamon Export Management System",
+      "category": "HD Final Project",
+      "technologies": ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+      "description": "Built a web-based export management system for handling cinnamon export operations with structured data, clean UI flows, and practical admin workflows.",
+      "github": "https://github.com/Prabath397/Cinnamon-Export-Management-System",
+      "featured": true
+    },
+    {
+      "name": "Enterprise Smart Courier System",
+      "category": "Logistics Platform",
+      "technologies": ["Java", "Spring Boot", "PostgreSQL", "React"],
+      "description": "Developed a full-stack courier platform with parcel booking, customer address management, tracking, warehouse operations, driver workflows, reports, and dashboards.",
+      "github": "https://github.com/Prabath397/Enterprise-Smart-Courier-System"
+    },
+    {
+      "name": "Nexia AI Chat Assistant",
+      "category": "AI Assistant",
+      "technologies": ["MongoDB", "Express.js", "React", "Node.js", "Vite", "Docker"],
+      "description": "Created a full-stack AI chat assistant using MongoDB Atlas, Express.js, React, Node.js, and Vite, with a containerized development setup.",
+      "github": "https://github.com/Prabath397/Mern-AI-Support-Chatbot"
+    },
+    {
+      "name": "Cozy Comfort SOC System",
+      "category": "Supply Chain",
+      "technologies": ["ASP.NET Core", "C#", "SQL Server", "PHP", "JavaScript", "Entity Framework Core"],
+      "description": "Built an SOC system using ASP.NET Core Web API, Entity Framework Core, SQL Server, PHP, and JavaScript for database-driven operations.",
+      "github": "https://github.com/Prabath397/Cozy-Comfort-SOC-System-ASP.NET-Core"
+    }
+  ],
+  "pinned": [
+    {
+      "name": "Cinnamon-Export-Management-System",
+      "description": "Web-based cinnamon export management system with buyer, supplier, and admin modules.",
+      "language": "PHP",
+      "color": "#4f5d95",
+      "stars": 1,
+      "url": "https://github.com/Prabath397/Cinnamon-Export-Management-System"
+    },
+    {
+      "name": "EcoStay-Retreat-Android-App",
+      "description": "Android resort booking app built with Java and SQLite for eco-room bookings, activities, notifications, and admin management.",
+      "language": "Java",
+      "color": "#b07219",
+      "stars": 1,
+      "url": "https://github.com/Prabath397/EcoStay-Retreat-Android-App"
+    },
+    {
+      "name": "Mern-AI-Support-Chatbot",
+      "description": "ChatGPT-style MERN AI assistant with JWT auth, MongoDB conversations, file attachments, OCR image reading, admin dashboard, and OpenRouter AI integration.",
+      "language": "JavaScript",
+      "color": "#f1e05a",
+      "stars": 1,
+      "url": "https://github.com/Prabath397/Mern-AI-Support-Chatbot"
+    },
+    {
+      "name": "Enterprise-Smart-Courier-System",
+      "description": "Full-stack logistics SaaS with Spring Boot, PostgreSQL, React, Docker, JWT auth, parcel tracking, warehouse workflows, delivery management, and reports.",
+      "language": "Java",
+      "color": "#b07219",
+      "stars": 1,
+      "url": "https://github.com/Prabath397/Enterprise-Smart-Courier-System"
+    },
+    {
+      "name": "Cozy-Comfort-SOC-System-ASP.NET-Core",
+      "description": "Service-oriented blanket ordering and inventory management system built with ASP.NET Core Web API, SQL Server, PHP and JavaScript.",
+      "language": "C#",
+      "color": "#178600",
+      "stars": 1,
+      "url": "https://github.com/Prabath397/Cozy-Comfort-SOC-System-ASP.NET-Core"
+    },
+    {
+      "name": "Dockerized-Student-Task-Manager",
+      "description": "Student task management web app built with Flask, MySQL, Docker, and Docker Compose.",
+      "language": "Python",
+      "color": "#3572A5",
+      "stars": 1,
+      "url": "https://github.com/Prabath397/Dockerized-Student-Task-Manager"
+    }
+  ]
+}

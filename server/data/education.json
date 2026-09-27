@@ -1,0 +1,35 @@
+{
+  "qualifications": [
+    {
+      "degree": "Higher Diploma in Computing and Software Engineering",
+      "institution": "ICBT Campus - Cardiff Metropolitan University",
+      "period": "2024 - 2026",
+      "notes": "Leading to BSc (Hons)"
+    },
+    {
+      "degree": "G.C.E. Advanced Level",
+      "institution": "De Mazenod College, Kandana",
+      "period": "2023",
+      "notes": "English Medium",
+      "grades": [
+        { "subject": "ICT", "grade": "B" },
+        { "subject": "Combined Maths", "grade": "S" },
+        { "subject": "Physics", "grade": "S" },
+        { "subject": "General English", "grade": "A" }
+      ]
+    },
+    {
+      "degree": "Cambridge GCE Ordinary Level",
+      "institution": "OKI International School, Kandana",
+      "period": "2019",
+      "notes": "English Medium",
+      "grades": [
+        { "subject": "Mathematics", "grade": "A" },
+        { "subject": "Sinhala", "grade": "A" },
+        { "subject": "Computer Science", "grade": "B" },
+        { "subject": "Physics/Chemistry/Biology", "grade": "B" },
+        { "subject": "English Language", "grade": "C" }
+      ]
+    }
+  ]
+}

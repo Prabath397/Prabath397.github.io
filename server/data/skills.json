@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "title": "Programming Languages",
+      "icon": "fas fa-code",
+      "items": ["Java", "JavaScript", "C#", "Python", "PHP", "C++", "SQL", "R"]
+    },
+    {
+      "title": "Frontend",
+      "icon": "fas fa-window-restore",
+      "items": ["React", "Vite", "HTML", "CSS", "Bootstrap"]
+    },
+    {
+      "title": "Backend and APIs",
+      "icon": "fas fa-server",
+      "items": ["Spring Boot", "Node.js", "Express.js", "ASP.NET Core", "REST APIs"]
+    },
+    {
+      "title": "Databases and ORM",
+      "icon": "fas fa-database",
+      "items": ["PostgreSQL", "MongoDB", "MySQL", "SQL Server", "SQLite", "JPA/Hibernate", "Entity Framework Core"]
+    },
+    {
+      "title": "DevOps and Tools",
+      "icon": "fas fa-screwdriver-wrench",
+      "items": ["Git", "GitHub", "Docker", "Docker Compose", "Postman", "Swagger/OpenAPI", "VS Code", "Visual Studio"]
+    },
+    {
+      "title": "Software Concepts",
+      "icon": "fas fa-diagram-project",
+      "items": ["OOP", "Data Structures", "JWT Authentication", "Role-Based Access Control (RBAC)", "RESTful API Design", "SDLC"]
+    }
+  ]
+}

@@ -857,30 +857,60 @@ textarea {
 }
 
 .certificate-preview {
-  min-height: 420px;
+  position: relative;
+  min-height: 280px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background:
-    linear-gradient(135deg, rgba(9, 105, 218, 0.08), rgba(100, 215, 255, 0.1)),
-    var(--surface-strong);
+  background: var(--surface-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 30px rgba(9, 46, 102, 0.08);
 }
 
-.certificate-preview object {
+.certificate-img-link {
+  position: relative;
+  display: block;
   width: 100%;
   height: 100%;
-  min-height: 420px;
-  border: 0;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.certificate-preview a {
-  display: grid;
-  min-height: 420px;
-  place-items: center;
-  padding: 24px;
-  color: var(--blue);
-  font-weight: 800;
-  text-align: center;
+.certificate-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.certificate-img-link:hover .certificate-img {
+  transform: scale(1.02);
+}
+
+.certificate-zoom-hint {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(6, 26, 52, 0.85);
+  color: var(--white);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.85;
+  backdrop-filter: blur(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.certificate-img-link:hover .certificate-zoom-hint {
+  opacity: 1;
+  transform: translateY(-2px);
 }
 
 .certificate-details {
@@ -1015,8 +1045,8 @@ textarea {
 
 .back-to-top {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 24px;
+  bottom: 84px;
   z-index: 900;
   display: grid;
   place-items: center;

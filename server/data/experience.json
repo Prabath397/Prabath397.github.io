@@ -1,0 +1,26 @@
+{
+  "positions": [
+    {
+      "title": "Administrative Supervisor",
+      "company": "Citypak by Advantis Head Office, Colombo 02",
+      "period": "Feb 2025 - Present",
+      "current": true,
+      "highlights": [
+        "Oversee administrative operations with attention to accuracy and workflow consistency.",
+        "Coordinate daily office tasks and support smooth internal operations.",
+        "Promoted to a permanent role after a successful internship period."
+      ]
+    },
+    {
+      "title": "Data Entry Intern",
+      "company": "Citypak by Advantis Head Office, Colombo 02",
+      "period": "May 2024 - Jan 2025",
+      "current": false,
+      "highlights": [
+        "Entered, updated, and maintained company records with high accuracy.",
+        "Supported administrative tasks and document processing workflows.",
+        "Built practical habits around precision, consistency, and accountability."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "prabath-ai-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-powered developer portfolio for Prabath Udayanga Jayasuriya with an integrated Gemini-powered portfolio assistant.",
+  "scripts": {
+    "dev": "concurrently -n \"server,client\" -c \"blue,green\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "install:all": "cd client && npm install && cd ../server && npm install"
+  },
+  "author": "Prabath Udayanga Jayasuriya",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

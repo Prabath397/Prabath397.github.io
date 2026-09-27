@@ -1,0 +1,18 @@
+{
+  "certifications": [
+    {
+      "title": "Cloud Computing: Understanding Core Concepts",
+      "provider": "Certificate of Completion",
+      "description": "Completed learning focused on cloud computing fundamentals, core concepts, and the technology foundations used in modern software and infrastructure.",
+      "documentPath": "/documents/CertificateOfCompletion_Cloud_Computing.pdf",
+      "linkedinPost": "https://www.linkedin.com/posts/prabath-jayasuriya_cloud-computing-understanding-core-concepts-ugcPost-7469000926251511808-M2T0/"
+    },
+    {
+      "title": "Cybersecurity with Cloud Computing",
+      "provider": "Certificate of Completion",
+      "description": "Completed learning focused on cybersecurity principles in cloud environments, strengthening awareness of secure cloud-based systems and infrastructure.",
+      "documentPath": "/documents/CertificateOfCompletion_Cybersecurity.pdf",
+      "linkedinPost": "https://www.linkedin.com/posts/prabath-jayasuriya_cybersecurity-with-cloud-computing-ugcPost-7470389789297381377-Amqj/"
+    }
+  ]
+}
