@@ -11,9 +11,7 @@
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-markdown": "^10.1.0"
-  },
-  "devDependencies": {
+    "react-markdown": "^10.1.0",
     "@vitejs/plugin-react": "^4.4.1",
     "vite": "^6.3.5"
   }

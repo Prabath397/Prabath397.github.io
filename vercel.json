@@ -1,7 +1,7 @@
 {
   "buildCommand": "cd client && npm run build",
   "outputDirectory": "client/dist",
-  "installCommand": "cd client && npm install && cd ../server && npm install",
+  "installCommand": "cd client && npm install --include=dev && cd ../server && npm install",
   "functions": {
     "api/chat.js": {
       "includeFiles": "server/data/**"
