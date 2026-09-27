@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Prabath Jayasuriya favicon</title>
+  <defs>
+    <linearGradient id="mark" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1f6f8b"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <path d="M12 47 47 12h5v5L17 52h-5z" fill="url(#mark)" opacity=".9"/>
+  <circle cx="50" cy="14" r="5" fill="#f8fafc"/>
+  <text
+    x="31"
+    y="41"
+    fill="#f8fafc"
+    font-family="Inter, Arial, sans-serif"
+    font-size="24"
+    font-weight="800"
+    text-anchor="middle"
+    letter-spacing="0">PJ</text>
+</svg>
