@@ -63,7 +63,13 @@ export function useChat() {
           content: m.content,
         }));
 
-      const response = await fetch('/api/chat', {
+      const endpoint =
+        import.meta.env.VITE_API_URL ||
+        (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+          ? '/api/chat'
+          : 'https://prabath397-github-io.vercel.app/api/chat');
+
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
