@@ -32,7 +32,7 @@ The assistant is strictly grounded in verified portfolio data and declines to ha
 |---|---|
 | **Frontend** | React 19, Vite 6, Custom Modular CSS, Font Awesome 6, Inter font |
 | **Backend & API** | Node.js, Express 5, Helmet, CORS, Express-Rate-Limit |
-| **AI Integration** | Google Gemini API (`gemini-2.0-flash` via `@google/generative-ai`) |
+| **AI Integration** | Google Gemini API |
 | **Grounding Strategy** | Context Injection with strict negative-constraint system prompt |
 | **Hosting** | GitHub Pages (Frontend) & Vercel Serverless (AI Chat API) |
 
@@ -123,4 +123,4 @@ Visit **`http://localhost:5173`** in your browser. The Vite dev server will auto
 
 ## License
 
-MIT License — see [LICENSE.txt](LICENSE.txt)
+MIT License - see [LICENSE.txt](LICENSE.txt)
