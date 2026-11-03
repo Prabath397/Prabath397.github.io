@@ -98,18 +98,6 @@ NODE_ENV=development
 ALLOWED_ORIGIN=http://localhost:5173
 ```
 
-### 4. Running the Development Servers
-
-```bash
-# Terminal 1 - Start the Express API Server (Port 3001):
-npm run dev:server
-
-# Terminal 2 - Start the Vite Frontend (Port 5173):
-npm run dev:client
-```
-
-Visit **`http://localhost:5173`** in your browser. The Vite dev server will automatically proxy chat requests (`/api/*`) to Express on port 3001.
-
 ---
 
 ## Contact
