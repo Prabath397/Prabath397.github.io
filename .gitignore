@@ -14,6 +14,9 @@ server/.env
 client/dist/
 dist/
 
+# Local source documents (the site publishes image previews only)
+.private-documents/
+
 # IDE & Editor
 .vscode/
 .idea/

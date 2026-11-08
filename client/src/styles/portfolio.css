@@ -842,6 +842,50 @@ textarea {
   font-weight: 800;
 }
 
+.education-documents {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+  user-select: none;
+}
+
+.education-card-featured {
+  grid-column: 1 / -1;
+}
+
+.education-document {
+  margin: 0;
+}
+
+.education-document-frame {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 4px);
+  background: #eef1f4;
+  box-shadow: 0 14px 36px rgba(31, 35, 40, 0.12);
+}
+
+.education-document img {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.education-document figcaption {
+  margin-top: 12px;
+  color: var(--ink);
+  font-weight: 800;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .education-documents {
+    grid-template-columns: 1fr;
+  }
+}
+
 .certifications-layout {
   display: grid;
   gap: 22px;

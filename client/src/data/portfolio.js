@@ -7,14 +7,14 @@
 
 export const profile = {
   name: 'Prabath Udayanga Jayasuriya',
-  title: 'Software Engineering Student',
+  title: 'Software Engineering Graduate',
   tagline: 'Versatile Technology Learner · Practical Problem Solver',
   location: 'Kandana, Sri Lanka',
   status: 'Open to internships and junior software roles',
   summary:
     'I build clean, usable solutions while growing knowledge across web, mobile, desktop applications, analytics, UI/UX, databases, networking, SDLC, and project management.',
   about:
-    'I am currently following the Higher Diploma in Computing and Software Engineering at ICBT Campus, delivered with Cardiff Metropolitan University and leading toward the BSc (Hons) pathway. My focus is on becoming the kind of engineer who can connect knowledge from different modules, understand the problem, structure the solution, and keep improving the implementation after it works.',
+    'I completed the Higher Diploma in Computing and Software Engineering at ICBT Campus, delivered with Cardiff Metropolitan University, with Distinction. This achievement provides a strong foundation for my BSc (Hons) pathway. My focus is on becoming the kind of engineer who can connect knowledge from different modules, understand the problem, structure the solution, and keep improving the implementation after it works.',
   aboutExtra:
     'My administrative and data-entry experience has also shaped how I approach software: accuracy matters, workflows matter, and small reliability improvements can make daily work much easier.',
 };
@@ -159,7 +159,17 @@ export const education = [
     degree: 'Higher Diploma in Computing and Software Engineering',
     institution: 'ICBT Campus - Cardiff Metropolitan University',
     period: '2024 - 2026',
-    notes: 'Leading to BSc (Hons)',
+    notes: 'Completed with Distinction · BSc (Hons) pathway',
+    documents: [
+      {
+        label: 'Higher Diploma Certificate',
+        imagePath: '/images/hd-certificate-page-1.png',
+      },
+      {
+        label: 'Higher Diploma Transcript',
+        imagePath: '/images/hd-transcript-page-1.png',
+      },
+    ],
   },
   {
     degree: 'G.C.E. Advanced Level',
@@ -258,7 +268,7 @@ export const contact = {
 export const sectionIds = ['about', 'work', 'experience', 'education', 'certifications', 'skills', 'contact'];
 
 export const heroMetrics = [
-  { label: '2024 - 2026', description: 'Higher Diploma in Computing and Software Engineering' },
+  { label: 'Distinction', description: 'Higher Diploma in Computing and Software Engineering' },
   { label: 'Wide skill set', description: 'Development, design, data, systems, and delivery' },
   { label: 'Sri Lanka', description: 'Based in Kandana' },
 ];
